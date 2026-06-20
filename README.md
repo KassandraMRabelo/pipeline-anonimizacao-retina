@@ -37,3 +37,22 @@ git clone https://github.com/seu-usuario/pipeline-anonimizacao-retina.git
 cd pipeline-anonimizacao-retina
 pip install -r requirements.txt
 python pipeline/pipeline_anonimizacao.py --imagem caminho/para/imagem.jpg
+
+
+
+### 3. Fazer upload dos arquivos
+
+**Pelo navegador:**
+1. No repositório, clique em "Add file" → "Upload files"
+2. Arraste e solte os arquivos
+3. Escreva mensagem de commit
+4. Confirmar
+
+**Ou pelo terminal:**
+```bash
+git clone https://github.com/seu-usuario/pipeline-anonimizacao-retina.git
+cd pipeline-anonimizacao-retina
+# Copiar todos os arquivos para dentro da pasta
+git add .
+git commit -m "Versão inicial do pipeline e site"
+git push origin main
