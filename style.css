@@ -1,0 +1,539 @@
+/* ==============================================
+   PIPELINE DE ANONIMIZAÇÃO DE RETINA - ESTILOS
+   Autora: Kassandra Maria de Sousa Rabêlo
+   IFPI - Campus Floriano, 2026
+   ============================================== */
+
+/* ===== RESET E BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F6F4EF;
+    font-family: 'Inter', sans-serif;
+    color: #2C2C2C;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* ===== VARIÁVEIS ===== */
+:root {
+    --dusty-teal: #7B9C8E;
+    --sage-light: #C5D1C0;
+    --mint-soft: #B3CBB0;
+    --stone: #D6CDC1;
+    --card-white: #FFFFFF;
+    --border-soft: #E2DBD0;
+    --text-muted: #5E5B55;
+    --shadow-sm: 0 6px 14px rgba(0, 0, 0, 0.02);
+    --shadow-md: 0 12px 24px -10px rgba(0, 0, 0, 0.05);
+    --radius-lg: 28px;
+    --radius-md: 20px;
+    --radius-sm: 16px;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+/* ===== HEADER ===== */
+.hero-section {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--stone);
+    padding-bottom: 1.5rem;
+}
+
+.badge-research {
+    background-color: var(--dusty-teal);
+    color: #FEFCF7;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.3rem 1rem;
+    border-radius: 40px;
+    display: inline-block;
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.3px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 650;
+    background: linear-gradient(135deg, #2F5C4A 0%, #618C70 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 0.3rem;
+}
+
+.subhead {
+    font-size: 1rem;
+    color: var(--text-muted);
+    border-left: 4px solid var(--mint-soft);
+    padding-left: 1rem;
+    margin-top: 0.3rem;
+    max-width: 80%;
+}
+
+/* ===== NAVEGAÇÃO POR ABAS ===== */
+.tabs-nav {
+    display: flex;
+    gap: 0.3rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--stone);
+    padding-bottom: 0.3rem;
+}
+
+.tab-btn {
+    background: transparent;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: all 0.2s ease;
+    color: var(--text-muted);
+    font-family: 'Inter', sans-serif;
+}
+
+.tab-btn:hover {
+    background: var(--sage-light);
+    color: #2C4A3A;
+}
+
+.tab-btn.active {
+    background: var(--dusty-teal);
+    color: white;
+    box-shadow: 0 2px 8px rgba(123, 156, 142, 0.3);
+}
+
+.tab-btn i {
+    margin-right: 6px;
+}
+
+/* ===== CONTEÚDO DAS ABAS ===== */
+.tab-content {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.tab-content.active-tab {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== CARDS DE SEÇÃO ===== */
+.section-card {
+    background: var(--card-white);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem 1.8rem;
+    margin-bottom: 1.8rem;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-soft);
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    color: #3C5B4C;
+}
+
+.section-title i {
+    background: var(--sage-light);
+    padding: 8px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== PIPELINE STEPS ===== */
+.pipeline-steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+}
+
+.step-card {
+    flex: 1;
+    min-width: 120px;
+    background: #F8F6F1;
+    border-radius: var(--radius-md);
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid var(--border-soft);
+}
+
+.step-card p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+.step-number {
+    background: var(--dusty-teal);
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* ===== MÉTRICAS ===== */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+}
+
+.metric-card {
+    background: #F2F5EF;
+    border-radius: var(--radius-md);
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 3px solid var(--dusty-teal);
+}
+
+.metric-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2F5C4A;
+}
+
+.metric-card small {
+    color: var(--text-muted);
+    font-size: 0.7rem;
+    display: block;
+    margin-top: 2px;
+}
+
+/* ===== TABELAS ===== */
+.metrics-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.metrics-table thead tr {
+    background: #F2F5EF;
+}
+
+.metrics-table th,
+.metrics-table td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.metrics-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* ===== TÉCNICAS ===== */
+.grid-techniques {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.2rem;
+}
+
+.tech-card {
+    background: #FCFBF8;
+    border-radius: var(--radius-md);
+    padding: 1rem;
+    border-left: 4px solid var(--dusty-teal);
+}
+
+.tech-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.tech-card p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* ===== BOTÕES ===== */
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin: 1.5rem 0;
+}
+
+.btn-colab {
+    background: linear-gradient(135deg, #F9AB00, #E89B00);
+    color: #1A1A1A;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s;
+    text-decoration: none;
+}
+
+.btn-colab:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(249, 171, 0, 0.3);
+}
+
+.btn-github {
+    background: #24292e;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 40px;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.btn-github:hover {
+    background: #3a3f44;
+}
+
+/* ===== RESULT BOX ===== */
+.result-box {
+    background: #F5F1EA;
+    border-radius: var(--radius-sm);
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+/* ===== HIGHLIGHT ===== */
+.highlight {
+    background: #EFF2E9;
+    padding: 1rem;
+    border-radius: var(--radius-sm);
+    margin: 1rem 0;
+    border-left: 4px solid var(--dusty-teal);
+}
+
+/* ===== CASOS ===== */
+.case-item {
+    margin-bottom: 2rem;
+}
+
+.case-item:last-child {
+    margin-bottom: 0;
+}
+
+.case-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.case-item h3 i {
+    color: var(--dusty-teal);
+    margin-right: 8px;
+}
+
+/* ===== TERMINAL E JSON ===== */
+.terminal-output,
+.json-output {
+    background: #1e1e1e;
+    color: #d4d4d4;
+    padding: 1rem;
+    border-radius: var(--radius-sm);
+    overflow-x: auto;
+    font-size: 0.75rem;
+    font-family: 'Courier New', monospace;
+    margin: 0.8rem 0;
+    line-height: 1.6;
+}
+
+.json-output {
+    color: #ce9178;
+}
+
+/* ===== FAQ ===== */
+.faq-item {
+    border-bottom: 1px solid var(--border-soft);
+    padding: 0.6rem 0;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-question {
+    background: transparent;
+    border: none;
+    width: 100%;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.6rem 0;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    color: #2C4A3A;
+    text-align: left;
+}
+
+.faq-question i {
+    transition: transform 0.3s ease;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.faq-question[aria-expanded="true"] i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    color: var(--text-muted);
+    padding-left: 0.3rem;
+}
+
+.faq-answer.active {
+    max-height: 300px;
+    padding-bottom: 0.8rem;
+}
+
+/* ===== REFERÊNCIAS ===== */
+.references-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 2;
+}
+
+.references-list li {
+    padding: 0.2rem 0;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #f0ede8;
+}
+
+.references-list li::before {
+    content: "📄 ";
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--stone);
+    color: #8C8378;
+    font-size: 0.75rem;
+    margin-top: 1rem;
+    line-height: 1.8;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .section-card {
+        padding: 1rem;
+        border-radius: var(--radius-md);
+    }
+
+    .tab-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+        flex: 1 1 auto;
+    }
+
+    .pipeline-steps {
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
+    .step-card {
+        min-width: unset;
+    }
+
+    .subhead {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-techniques {
+        grid-template-columns: 1fr;
+    }
+
+    .btn-colab,
+    .btn-github {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .metrics-table {
+        font-size: 0.75rem;
+    }
+
+    .metrics-table th,
+    .metrics-table td {
+        padding: 6px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .metrics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tabs-nav {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    .tab-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
