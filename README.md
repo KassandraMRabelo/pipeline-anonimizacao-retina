@@ -56,3 +56,11 @@ cd pipeline-anonimizacao-retina
 git add .
 git commit -m "Versão inicial do pipeline e site"
 git push origin main
+
+
+📬 Contato
+Autora: Kassandra Maria de Sousa Rabêlo 
+E-mail: caflo.2024114tads0011@aluno.ifpi.edu.br
+
+Orientador: Prof. Dr. Rafael Angelo Santos Leite 
+E-mail: rafaelangelo@ifpi.edu.br
