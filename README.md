@@ -14,6 +14,7 @@ E-mail: caflo.2024114tads0011@aluno.ifpi.edu.br
 
 **Orientador:** Prof. Dr. Rafael Angelo Santos Leite  
 E-mail: rafaelangelo@ifpi.edu.br
+
 **Ano:** 2026
 
 ## 🎯 Funcionalidades
