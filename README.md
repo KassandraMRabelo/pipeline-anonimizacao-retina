@@ -9,8 +9,8 @@
 
 Este projeto implementa um **pipeline funcional** para anonimização de imagens de retina (fundoscopia), alinhado à Lei Geral de Proteção de Dados (LGPD) brasileira. Desenvolvido como Trabalho de Conclusão de Curso (TCC) no IFPI Campus Floriano.
 
-**Autora:** Kassandra Maria de Sousa Rabêlo  
-**Orientador:** Prof. Dr. Rafael Angelo Santos Leite  
+**Autora:** Kassandra Maria de Sousa Rabêlo  E-mail: caflo.2024114tads0011@aluno.ifpi.edu.br
+**Orientador:** Prof. Dr. Rafael Angelo Santos Leite  E-mail: rafaelangelo@ifpi.edu.br
 **Ano:** 2026
 
 ## 🎯 Funcionalidades
@@ -33,34 +33,17 @@ Este projeto implementa um **pipeline funcional** para anonimização de imagens
 ### Opção 2: Local (Python)
 
 ```bash
-git clone https://github.com/seu-usuario/pipeline-anonimizacao-retina.git
+git clone https://github.com/KassandraMRabelo/pipeline-anonimizacao-retina.git
 cd pipeline-anonimizacao-retina
 pip install -r requirements.txt
 python pipeline/pipeline_anonimizacao.py --imagem caminho/para/imagem.jpg
 
-
-
-### 3. Fazer upload dos arquivos
-
-**Pelo navegador:**
-1. No repositório, clique em "Add file" → "Upload files"
-2. Arraste e solte os arquivos
-3. Escreva mensagem de commit
-4. Confirmar
-
-**Ou pelo terminal:**
+### **Pelo terminal:**
 ```bash
-git clone https://github.com/seu-usuario/pipeline-anonimizacao-retina.git
+git clone https://github.com/KassandraMRabelo/pipeline-anonimizacao-retina.git
 cd pipeline-anonimizacao-retina
 # Copiar todos os arquivos para dentro da pasta
 git add .
 git commit -m "Versão inicial do pipeline e site"
 git push origin main
 
-
-📬 Contato
-Autora: Kassandra Maria de Sousa Rabêlo 
-E-mail: caflo.2024114tads0011@aluno.ifpi.edu.br
-
-Orientador: Prof. Dr. Rafael Angelo Santos Leite 
-E-mail: rafaelangelo@ifpi.edu.br
