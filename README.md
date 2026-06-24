@@ -9,8 +9,10 @@
 
 Este projeto implementa um **pipeline funcional** para anonimização de imagens de retina (fundoscopia), alinhado à Lei Geral de Proteção de Dados (LGPD) brasileira. Desenvolvido como Trabalho de Conclusão de Curso (TCC) no IFPI Campus Floriano.
 
-**Autora:** Kassandra Maria de Sousa Rabêlo  E-mail: caflo.2024114tads0011@aluno.ifpi.edu.br
-**Orientador:** Prof. Dr. Rafael Angelo Santos Leite  E-mail: rafaelangelo@ifpi.edu.br
+**Autora:** Kassandra Maria de Sousa Rabêlo  
+E-mail: caflo.2024114tads0011@aluno.ifpi.edu.br
+**Orientador:** Prof. Dr. Rafael Angelo Santos Leite  
+E-mail: rafaelangelo@ifpi.edu.br
 **Ano:** 2026
 
 ## 🎯 Funcionalidades
@@ -38,7 +40,7 @@ cd pipeline-anonimizacao-retina
 pip install -r requirements.txt
 python pipeline/pipeline_anonimizacao.py --imagem caminho/para/imagem.jpg
 
-### **Pelo terminal:**
+**Pelo terminal:**
 ```bash
 git clone https://github.com/KassandraMRabelo/pipeline-anonimizacao-retina.git
 cd pipeline-anonimizacao-retina
